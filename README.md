@@ -1,7 +1,7 @@
 
-This example uses a .properties file with a spark job. It can be run on a single node DataStax Enterprise (DSE) cluster with Analytics enabled or a multi-node (DSE) cluster with Analytics enabled.   
+This example uses a java .properties file to provide a flexible way to pass values such as the job name, the location for logback.xml file to the compiled code of the spark job. It can be run on a single node DataStax Enterprise (DSE) cluster with Analytics enabled or a multi-node (DSE) cluster with Analytics enabled.   
 
-A properties file allows you to pass various configuration values to the job at runtime.  Similar to spark-logback-example-two job, this job doesn't require the use of --driver-java-options "=Dlogback.configurationFile=" option with spark-submit as found in spark-logback-example-one.  The reference to a specific logback.xml file can be shared between jobs or you could create custom logback.xml file for each job using a name like application_name.logback.xml.  The logback.xml file is configured with a parameter ${jobname}, which takes a value set within the job using System.setProperty to provide the job name.  The job name is set in the .properties file.   
+Similar to spark-logback-example-two job, this job doesn't require the use of --driver-java-options "=Dlogback.configurationFile=" option with spark-submit as found in spark-logback-example-one.  The reference to a specific logback.xml file can be shared between jobs or you could create custom logback.xml file for each job using a name like application_name.logback.xml.  The logback.xml file is configured with a parameter ${jobname}, which takes a value set within the job using System.setProperty to provide the job name.  The job name is set in the .properties file.   
 
 To run:
 
