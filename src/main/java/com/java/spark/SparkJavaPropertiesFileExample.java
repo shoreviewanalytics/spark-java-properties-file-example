@@ -24,7 +24,7 @@ import java.io.FileInputStream;
 
 public class SparkJavaPropertiesFileExample {
 	
-    private static final Logger LOGGER = LoggerFactory.getLogger(SparkPropertiesFileExample.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(SparkJavaPropertiesFileExample.class);
 	
 	public static void main(String[] args) {
 			 
