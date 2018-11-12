@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
 import java.io.FileInputStream;
 
 
-public class SparkPropertiesFileExample {
+public class SparkJavaPropertiesFileExample {
 	
     private static final Logger LOGGER = LoggerFactory.getLogger(SparkPropertiesFileExample.class);
 	
